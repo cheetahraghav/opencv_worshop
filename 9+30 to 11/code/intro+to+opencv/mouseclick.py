@@ -8,8 +8,8 @@ from matplotlib import pyplot as plt
 
 # Load the image before defining the callback function
 img = cv.imread(r"9+30 to 11\code\intro+to+opencv\cats\cat1.jpg")
-if img is None:
-    raise FileNotFoundError(f"Could not load image from {IMAGE_PATH}")
+#if img is None:
+ #   raise FileNotFoundError(f"Could not load image from {IMAGE_PATH}")
 
 def click_event(event, x, y, flags, params):
     """
