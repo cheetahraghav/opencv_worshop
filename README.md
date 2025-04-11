@@ -1,19 +1,79 @@
+# OpenCV Workshop
 
-📚 Workshop Modules
-1. Basics of OpenCV
-Image Reading and Display: Learn how to read images from disk and display them using OpenCV.
+A comprehensive workshop on computer vision using OpenCV and Convolutional Neural Networks (CNNs) for emotion detection.
 
-Video Capture: Understand how to capture video from a webcam or video file.
+## Setup Instructions
 
-Basic Image Processing: Explore operations like resizing, cropping, and color space conversions.
+1. Clone the repository:
+   ```
+   git clone https://github.com/cheetahraghav/opencv_worshop.git
+   cd opencv_worshop
+   ```
 
-2. Emotion Detection with CNN
-Dive into a project that utilizes Convolutional Neural Networks to detect emotions from facial expressions. This module covers:
+2. Environment setup (Optional):
+   ```
+   # Create and activate a virtual environment
+   python -m venv cv_env
+   
+   # On Windows
+   cv_env\Scripts\activate
+   
+   # On macOS/Linux
+   source cv_env/bin/activate
+   ```
 
-Dataset preparation
+3. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
-Model architecture design
+## Workshop Content
 
-Training and evaluation
+### Module 1: OpenCV Basics
 
-Real-time emotion detection
+This module covers the fundamentals of computer vision with OpenCV:
+
+- **Image Reading and Display**: Learn how to load images from disk and visualize them using OpenCV functions
+- **Video Capture**: Techniques for capturing and processing video streams from webcams or video files
+- **Basic Image Processing**: Master essential operations including:
+  - Resizing and scaling
+  - Image cropping
+  - Color space conversions (RGB, BGR, HSV, Grayscale)
+  - Drawing on images (lines, rectangles, circles)
+  - Image filtering and transformations
+
+### Module 2: Emotion Detection with CNN
+
+This advanced module explores emotion detection using Convolutional Neural Networks:
+
+- **Dataset Preparation**:
+  - Working with facial expression datasets
+  - Data preprocessing and augmentation
+  - Train/validation/test splitting
+
+- **CNN Architecture**:
+  - Understanding CNN components (convolutional layers, pooling, fully connected layers)
+  - Model design considerations for emotion recognition
+  - Implementation using modern frameworks
+
+- **Training and Evaluation**:
+  - Training procedures and hyperparameter tuning
+  - Model evaluation metrics
+  - Performance optimization techniques
+
+- **Real-time Emotion Detection**:
+  - Integrating the trained model with OpenCV
+  - Processing video streams for facial detection
+  - Real-time emotion classification and visualization
+
+## Additional Resources
+
+- [CNN Visualization Tool](https://adamharley.com/nn_vis/cnn/2d.html) - Interactive visualization of CNNs
+- [CNN Introduction](https://gamma.app/docs/Copy-of-Introduction-to-Convolutional-Neural-Networks-h4bzbh2auk496jw?mode=doc) - Comprehensive guide to CNN concepts
+
+## Requirements
+
+- Python 3.6+
+- OpenCV
+- NumPy
+
